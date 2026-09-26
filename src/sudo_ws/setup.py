@@ -25,6 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'sudonode = sudo_ws.sudonode:main'
+            'robothealthcoordinator = sudo_ws.robot_health_coordinator:main',
+            'taskcoordinator = sudo_ws.task_coordinator:main'
         ],
     },
 )
