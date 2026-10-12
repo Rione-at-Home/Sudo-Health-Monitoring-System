@@ -10,7 +10,7 @@ from diagnostic_msgs.msg import (
     KeyValue
 )
 
-from .KobukiDriver import KobukiDriver
+from .Kobukidriver import KobukiDriver
 
 
 class KobukiNode(Node):
