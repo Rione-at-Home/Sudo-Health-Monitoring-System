@@ -140,9 +140,9 @@ class RobotHealthCoordinator(Node):
         d("head_status_topic", "/head_health_status")
         d("head_timeout_s", 5.0)
         d("base_status_topic", "/base_health_status")
-        d("base_timeout_s", 5.0)
+        d("base_timeout_s", 15.0)
 
-        d("publish_rate_hz", 1.0)
+        d("publish_rate_hz", 0.2)
 
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.publish_rate_hz = float(g("publish_rate_hz"))
